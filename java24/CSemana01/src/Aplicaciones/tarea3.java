@@ -1,0 +1,22 @@
+package Aplicaciones;
+import java.util.Scanner;
+public class tarea3 {
+      public static void main(String[] args) {
+        Scanner teclado = new Scanner(System.in);
+        float longitud, ancho, area;
+        
+        System.out.print("ingrese su longitud: ");
+        longitud = Float.parseFloat(teclado.nextLine());
+        
+        System.out.print("ingrese su ancho: ");
+        ancho = Float.parseFloat(teclado.nextLine());
+        
+        area = longitud * ancho;
+        System.out.println("----Reporte----");
+        System.out.println("---------------");
+        System.out.println("La longuitud es  :" + longitud);
+        System.out.println("La ancho es: " + ancho);
+        System.out.println("El AREA es  : " + area);
+    }
+
+}
