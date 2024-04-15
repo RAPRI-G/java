@@ -1,0 +1,23 @@
+package Aplicaciones;
+import java.util.Scanner;
+public class tarea4 {
+      public static void main(String[] args) {
+        Scanner teclado = new Scanner(System.in);
+        float base, altura, area, perimetro;
+        
+        System.out.print("ingrese su base: ");
+        base = Float.parseFloat(teclado.nextLine());
+        
+        System.out.print("ingrese su altura: ");
+        altura = Float.parseFloat(teclado.nextLine());
+        
+        area = base * altura;
+        perimetro =2*(base + altura);
+        System.out.println("----Reporte----");
+        System.out.println("---------------");
+        System.out.println("La longuitud es  :" + base);
+        System.out.println("La ancho es: " + altura);
+        System.out.println("El AREA es  : " + area);
+        System.out.println("El PERIMETRO es  : " + perimetro);
+    }
+}
